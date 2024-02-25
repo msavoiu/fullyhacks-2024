@@ -28,5 +28,9 @@ def drawingPrompt():
 
     return render_template('drawing_prompt.html', prompt = random_prompt)
 
+@app.route('/reflection')
+def reflection():
+    return render_template('reflection.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
