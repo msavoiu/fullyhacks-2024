@@ -3,27 +3,24 @@ import time
 from turtle import *
 
 juno = turtle.Turtle()
-myriad = turtle.Turtle()
-# timer_text = turtle.Turtle()
 
-juno.shapesize(1)
-juno.pensize(5)
-turtle.delay(15)
-juno.color("#0A970C")
-juno.shape("turtle")
-juno.begin_fill()
-juno.circle(150)
-juno.end_fill()
-juno.color("#BFFFED")
-juno.begin_fill()
-juno.circle(150)
-juno.end_fill()
-juno.color("#0A970C")
-juno.begin_fill()
-juno.circle(150)
-juno.end_fill()
-juno.color("#BFFFED")
-juno.begin_fill()
-juno.circle(150)
-juno.end_fill()
-turtle.done()
+def loopFour(t, colors):
+    def breathingLoop(t, color):
+        t.shapesize(1)
+        t.pensize(5)
+        turtle.delay(10)
+        t.color(color)
+        t.shape("turtle")
+        t.begin_fill()
+        t.circle(150)
+        t.end_fill()
+
+    color_index = 0
+    for x in range(4):
+        if color_index > 1:
+            color_index = 0
+        breathingLoop(t, colors[color_index])
+        color_index += 1
+
+colors = ['#0A970C', '#BFFFED']
+loopFour(juno, colors)
