@@ -3,10 +3,28 @@
   <head>
     <link rel="stylesheet" href="../static/leaf_styles.css">
     <title>Leaves on a Stream</title>
+    <style>
+  img {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+
+  @keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+  </style>
   </head>
   <body>
     <h1> Leaves on a Stream </h1>
 
-    </a>
+    <img src="/../leaf.png" alt="Leaf" width="400" height="300">
+
   </body>
 </html>
