@@ -4,27 +4,45 @@
     <link rel="stylesheet" href="../static/leaf_styles.css">
     <title>Leaves on a Stream</title>
     <style>
+
   img {
     width: 200px;
     height: 300px;
     position: relative;
-    animation-name: example;
-    animation-duration: 4s;
+    animation-name: drifting_leaf;
+    animation-duration: 40s;
   }
 
-  @keyframes example {
-    0%   {left:0px; top:0px;}
-    25%  {left:200px; top:0px;}
-    50%  {left:200px; top:200px;}
-    75%  {left:0px; top:200px;}
-    100% {left:0px; top:0px;}
+  div {
+    position: relative;
+    animation-duration: 40s;
+    animation-name: drifting_text;
   }
+
+  @keyframes drifting_leaf {
+    0%   {left:0px; top:0px;}
+    /* 25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;} */
+    100% {left:2000px; top:1500px;}
+  }
+
+  @keyframes drifting_text {
+    0%   {left:50px; top:-150px;}
+    /* 25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;} */
+    100% {left:2000px; top:1500px;}
+  }
+
   </style>
   </head>
   <body>
     <h1> Leaves on a Stream </h1>
-
-    <img src="/../leaf.png" alt="Leaf" width="400" height="300">
+    {% for leaf in leaves %}
+      <div id=""div1"> {{ leaf }} </div>
+      <img src="../static/leaf.png" alt="Leaf" width="400" height="300">
+    {% endfor %}
 
   </body>
 </html>

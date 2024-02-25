@@ -1,6 +1,63 @@
-body {
-    background-color: #E2FADE;
-    color: #2D7B55;
-    /* font-size: 1.1em; */
-    /* font-family: "yosugara Medium", sans-serif; */
+@font-face {
+    font-family: skincake;
+    src: url('../static/Skincake.ttf') format('truetype');
 }
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+h1 {
+    font-family: Arial;
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow:
+    0 0 5px #ffffff,
+    0 0 15px #ffffff,
+    0 0 42px #00ff84,
+    0 0 60px #00ff84,
+    0 0 200px #00ff84,
+    0 0 20px #2aa86b,
+    0 0 40px #2aa86b,
+    0 0 100px #2aa86b;
+}
+
+p {
+    text-align: center;
+    padding: 15px;
+}
+
+/* .neon-text {
+    font-family: Arial;
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow:
+    0 0 5px #ffffff,
+    0 0 15px #ffffff,
+    0 0 42px #00ff84,
+    0 0 60px #00ff84,
+    0 0 200px #00ff84,
+    0 0 20px #2aa86b,
+    0 0 40px #2aa86b,
+    0 0 100px #2aa86b;
+} */
+
+button {
+    font-family: Arial;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    padding: 10px 10px;
+    color: #ffffff;
+    border-radius: 12px;
+    text-shadow: 0 0
+    filter: drop-shadow(0 0 1rem var(--purple-300)); 
+}
+
+.button-text {
+    filter: drop-shadow(0 0 1px currentcolor);
+}
+
+/* button {
+    filter: drop-shadow(0 0 1rem var(--purple-300));
+} */
