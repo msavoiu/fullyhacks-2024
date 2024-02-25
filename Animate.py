@@ -22,5 +22,11 @@ def loopFour(t, colors):
         breathingLoop(t, colors[color_index])
         color_index += 1
 
-colors = ['#0A970C', '#BFFFED']
+colors = ['#32FF00', '#00FFF7']
 loopFour(juno, colors)
+
+# timer=turtle.Turtle()
+# start=time.time()
+# while True:
+#     timer.clear()
+#     timer.write(int(time.time() - start))
